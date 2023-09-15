@@ -6,20 +6,21 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+
         android:id="@+id/navigation_home"
         android:name="com.example.faff.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@drawable/home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_listen"
         android:name="com.example.faff.ui.listen.ListenFragment"
-        android:label="@string/title_dashboard"
+        android:label="@drawable/ic_listen"
         tools:layout="@layout/fragment_listen" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_profile"
         android:name="com.example.faff.ui.profile.ProfileFragment"
-        android:label="@string/title_notifications"
+        android:label="@drawable/profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>
