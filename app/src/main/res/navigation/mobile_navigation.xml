@@ -9,18 +9,21 @@
 
         android:id="@+id/navigation_home"
         android:name="com.example.faff.ui.home.HomeFragment"
-        android:label="@drawable/home"
+        android:text="home"
+        android:icon="@drawable/home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_listen"
         android:name="com.example.faff.ui.listen.ListenFragment"
-        android:label="@drawable/ic_listen"
+        android:text="listen"
+        android:icon="@drawable/ic_listen"
         tools:layout="@layout/fragment_listen" />
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.faff.ui.profile.ProfileFragment"
-        android:label="@drawable/profile"
+        android:text="profile"
+        android:icon="@drawable/profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

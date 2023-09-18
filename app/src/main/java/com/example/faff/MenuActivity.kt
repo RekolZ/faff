@@ -10,9 +10,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.faff.databinding.ActivityMenuBinding
 
 class MenuActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMenuBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)

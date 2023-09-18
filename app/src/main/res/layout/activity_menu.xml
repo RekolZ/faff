@@ -4,7 +4,8 @@
     android:id="@+id/container"
     android:background="@color/faggot"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+  >
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:labelVisibilityMode="unlabeled"
@@ -14,7 +15,6 @@
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:background="@color/faggot"
-
         app:itemIconTint="@drawable/bottom_icon"
         app:itemRippleColor="@null"
         app:layout_constraintBottom_toBottomOf="parent"
