@@ -1,5 +1,6 @@
 package com.example.faff
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,6 +20,9 @@ class SignInActivity : AppCompatActivity() {
     }
     fun signin(view: View){
         if(email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
+
+                val intent = Intent( this, MenuActivity::class.java)
+                startActivity(intent)
 
         }
         else{

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.faff.R
 
 data class feel(val image:Int, val name_feel:String)
-class MyFeel {val list = arrayListOf(feel(R.drawable.meow,""),
+class MyFeel{val list = arrayListOf(feel(R.drawable.meow,"faggot"),
     feel(R.drawable.prrr,"Расслабленым"),
     feel(R.drawable.meowmeow,"Сосредоточеным"),
     feel(R.drawable.meeeeeow,"Взволнованым"))
@@ -21,12 +21,12 @@ class FeelRecycler (val context: Context,val list: ArrayList<feel>):RecyclerView
         return MyVH(root)
     }
     class MyVH(itemView:View):RecyclerView.ViewHolder(itemView){
-        val image:ImageView = itemView.findViewById(R.id.meowmurrbg)
-        val textView:TextView = itemView.findViewById(R.id.text_feel)
+        val image:ImageView = itemView.findViewById(R.id.img_feel)
+        val TextView: TextView = itemView.findViewById(R.id.text_feel)
     }
     override fun onBindViewHolder(holder: FeelRecycler.MyVH, position: Int) {
         holder.image.setImageResource(list[position].image)
-        holder.textView.setText(list[position].name_feel)
+        holder.TextView.setText(list[position].name_feel)
     }
 
     override fun getItemCount(): Int {

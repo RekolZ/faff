@@ -17,7 +17,7 @@
         android:alpha="2"
         android:background="@color/green"
         android:fontFamily="@font/alegreya_sans_thin"
-        android:onClick="login"
+        android:onClick="signin"
         android:src="@drawable/roundrect"
         android:text="Sign in"
         android:textColor="@color/white"
