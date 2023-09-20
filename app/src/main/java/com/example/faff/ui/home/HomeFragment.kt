@@ -12,6 +12,8 @@ import com.example.faff.R
 import com.example.faff.databinding.FragmentHomeBinding
 import com.example.faff.recadapters.FeelRecycler
 import com.example.faff.recadapters.MyFeel
+import com.example.faff.recadapters.MyState
+import com.example.faff.recadapters.StateRecycler
 
 class HomeFragment : Fragment() {
 
@@ -22,9 +24,10 @@ class HomeFragment : Fragment() {
     ): View? {
 
         val root = inflater.inflate(R.layout.fragment_home, container, false)
+        val state_recycler: RecyclerView = root.findViewById(R.id.state_rec)
         val feel_recycler : RecyclerView = root.findViewById(R.id.feel_rec)
         feel_recycler.adapter = FeelRecycler(requireContext(),MyFeel().list)
-
+        state_recycler.adapter = StateRecycler(requireContext(),MyState().state_list)
         return root
     }
 

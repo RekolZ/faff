@@ -15,6 +15,7 @@ class MyFeel{val list = arrayListOf(feel(R.drawable.meow,"faggot"),
     feel(R.drawable.meowmeow,"Сосредоточеным"),
     feel(R.drawable.meeeeeow,"Взволнованым"))
 }
+
 class FeelRecycler (val context: Context,val list: ArrayList<feel>):RecyclerView.Adapter<FeelRecycler.MyVH>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeelRecycler.MyVH {
         val root = LayoutInflater.from(context).inflate(R.layout.feel_adapter,parent,false)
@@ -28,8 +29,14 @@ class FeelRecycler (val context: Context,val list: ArrayList<feel>):RecyclerView
         holder.image.setImageResource(list[position].image)
         holder.TextView.setText(list[position].name_feel)
     }
-
     override fun getItemCount(): Int {
         return list.size
+    }
+    data class state(val title:String,val text_state:String,val image_state:Int)
+    class MyState{
+        val list = arrayListOf(
+            state("Заголовок блока", "Краткое описание",R.drawable.meow),
+            state("Заголовок блока", "Краткое описание123",R.drawable.meow)
+        )
     }
 }
